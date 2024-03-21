@@ -16,7 +16,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "mvn clean package"
-                sh "mv target/hello-1.0.war target/simple-ecommerce-website-java.war"
+                
             }
         }
         stage("Deploy to Dev") {
